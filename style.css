@@ -32,11 +32,16 @@ body {
 }
 
 .container .content {
+  display: none;
+  visibility: hidden;
+}
+
+.container .content.show {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  visibility: visible;
 }
 
 .container .content img {
@@ -102,7 +107,6 @@ body {
   outline: none;
   background: var(--clr-dark-primary);
 }
-
 
 .container .slide-container .slide-buttons button:nth-child(1) {
   border-radius: 50% 0 0 50%;
