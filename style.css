@@ -25,11 +25,13 @@ body {
   background-size: 50vw;
   padding: 5rem 3rem;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
   max-width: 800px;
-  margin: auto;
 }
 
 .container .content {
@@ -43,6 +45,16 @@ body {
   justify-content: center;
   align-items: center;
   visibility: visible;
+  animation: show 1s;
+}
+
+@keyframes show {
+  from {
+    opacity: .3;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .container .content img {
@@ -166,4 +178,11 @@ body {
   }
 
 
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: 100%;
+    height: 100%;
+  }
 }
